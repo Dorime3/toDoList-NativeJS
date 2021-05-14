@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 0 20px;
+    min-height: 80vh;
+    background: #A8E6CF url(./pngwing.com.png) no-repeat center bottom;
+}
+
+.window {
+    background-color: #FFFACD;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(53, 42, 207, 1);
+    margin: 100px auto;
+    padding: 20px 25px 35px;
+    position: relative;
+}
+
+.window h1 {
+    color: #6DAE81;
+    text-align: center;
+}
+
+.window h5 {
+    font-family: 'Indie Flower';
+    font-size: 16px;
+    position: absolute;
+    left: 30px;
+    bottom: 0;
+    color: tomato;
+}
+.window h6 {
+    font-family: 'Indie Flower';
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+    font-size: 16px;
+    color: rgba(53, 42, 207, 1);
+}
+.important {
+    font-weight: 700;
+    color: tomato;
+}
+
+.addText {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 10px 0;
+    color: #00538A;
+}
+
+
+.btn-outline-success {
+    width: 100%;
+    padding: 8px 4px;
+    font-size: 18px;
+}
+
+.todo {
+    padding-left: 0;
+}
+
+.todo li {
+    padding: 1em 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo li:not(:last-child) {
+    border-bottom: .8px solid #6DAE81;
+}
+
+input[type=checkbox] {
+    opacity: 0;
+    position: absolute;
+}
+
+input[type=checkbox], label {
+    color: #00538A;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 6px 5px;
+    cursor: pointer;
+}
+
+
+input[type=checkbox] + label:before {
+    content: '';
+    /* background: #6DAE81; */
+    border-radius: 3px;
+    border: 3px solid #6DAE81;
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    padding: 3px;
+    margin-right: 15px;
+    text-align: center; 
+    box-sizing: content-box;
+}
+
+input[type=checkbox]:checked + label:before {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 10px;
+    border: solid #6DAE81;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    border-radius: 0;
+    margin: 0 21px 3px 5px; 
+    background-color: #FFFACD;
+}
+
+.delete {
+    display: inline-block;
+    width: 50px;
+    font-size: 25px;
+    padding: 0;
+}
+
+@media (max-width:520px) {
+    body {
+        background: #A8E6CF url(./pngwing.com.png) no-repeat center bottom/contain;
+    }
+    .window h5 {
+        bottom: 15px;
+    }
+    .window h6 {
+        font-size: 14px;
+    }
+}
