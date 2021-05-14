@@ -4,7 +4,7 @@ body {
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
     padding: 0 20px;
-    height: 100vh;
+    min-height: 80vh;
     background: #A8E6CF url(./pngwing.com.png) no-repeat center bottom;
 }
 
